@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+.produtos-container {
+    display: flex;          /* Habilita o Flexbox */
+    flex-wrap: wrap;        /* Permite que os cards quebrem para a próxima linha */
+    justify-content: space-around; /* Distribui os cards uniformemente */
+  }
+   
+  /* Estilo individual de cada card de produto */
+  .produto-card {
+    width: 350px;          /* Largura fixa do card */
+    height: 350px;         /* Altura fixa do card */
+    margin-bottom: 20px;    /* Espaço abaixo de cada card */
+    border: 1px solid #ccc; /* Borda de 1px, cor cinza claro */
+    background-color: #802C6E;
+    border-radius: 10px;     /* Arredonda os cantos */
+    overflow: hidden;       /* Esconde o conteúdo que ultrapassa as bordas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra suave */
+    transition: transform 0.2s ease-in-out;    /* Animação suave */
+    text-align: left;       /* Alinha o texto à esquerda dentro do card */
+    display: flex;          /* Habilita o Flexbox */
+    flex-direction: column; /* Organiza os elementos verticalmente */
+  }
+   
+  /* Efeito de "levantar" o card ao passar o mouse */
+  .produto-card:hover {
+    transform: translateY(-15px); /* Move o card 5px para cima */
+  }
+   
+  /* Estilo da imagem do produto */
+  .produto-imagem {
+    width: 100%;        /* Largura total do card */
+    height: 50%;       /* Altura da imagem ocupa 60% do card */
+    object-fit:fill;   /* Preenche o espaço mantendo a proporção e cortando se necessário */
+    display: block;      /* Remove espaço extra abaixo da imagem */
+  }
+   
+  /* Informações do produto (título e descrição) */
+  .produto-info {
+    padding: 10px;            /* Espaço interno de 10px */
+    flex-grow: 1;            /* Permite que as informações preencham o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+   
+  /* Estilo do título do produto */
+  .produto-info h2 {
+    font-family: 'Josefin Sans';
+    font-size: 1.2em;        /* Tamanho da fonte */
+    margin-bottom: 1px;      /* Espaço abaixo do título */
+    color: #ffffff;             /* Cor do texto (cinza escuro) */
+    overflow: hidden;        /* Esconde o texto que ultrapassa */
+    text-overflow: ellipsis; /* Adiciona "..." ao texto que ultrapassa */
+    white-space: nowrap;   /* Impede que o texto quebre para a próxima linha */
+    text-align: center;
+    
+  }
+  .produto-info h3 {
+    font-family: 'Josefin Sans';
+    font-size: 1.0em;        /* Tamanho da fonte */
+    margin-bottom: 1px;      /* Espaço abaixo do título */
+    color: #ffffff;        /* Cor do texto (cinza escuro) */     
+    text-align: center;
+    
+  }
+   
+  /* Estilo da descrição do produto */
+  .produto-info p {
+    font-family: 'Josefin Sans';
+    font-size: 0.9em;        /* Tamanho da fonte */
+    color: #D8D8D8;             /* Cor do texto (cinza médio) */
+    overflow: hidden;        /* Esconde o texto que ultrapassa */
+    text-overflow: ellipsis; /* Adiciona "..." ao texto que ultrapassa */
+    display: -webkit-box;   /* Habilita o corte de texto em múltiplas linhas */
+    -webkit-line-clamp: 5;  /* Limita a descrição a 5 linhas */
+    -webkit-box-orient: vertical; /* Define a orientação do corte */
+    white-space: normal;    /* Permite que o texto quebre para a próxima linha */
+  }
