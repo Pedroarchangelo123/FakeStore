@@ -1,14 +1,18 @@
+/* Importando a fonte 'Josefin Sans' do Google Fonts para ser usada no cabeçalho */
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
-.header{
-    background-color: #802C6E;
-    color: rgb(255, 255, 255);
-    display: flex;
-    margin-bottom: 2.5%;
+/* Estilo do cabeçalho (header) */
+.header {
+    background-color: #802C6E; /* Define a cor de fundo do cabeçalho com um tom de roxo */
+    color: rgb(255, 255, 255); /* Define a cor do texto como branco */
+    display: flex; /* Usando flexbox para o layout interno, alinhando os elementos de forma flexível */
+    margin-bottom: 2.5%; /* Adiciona uma margem inferior de 2.5% em relação ao contêiner pai */
 }
-.header h1{
-    text-align: center;
-    font-family: 'Josefin Sans';
-    font-weight: 350;
-    display: flex;
+
+/* Estilo específico para o título dentro do cabeçalho */
+.header h1 {
+    text-align: center; /* Centraliza o texto dentro do elemento <h1> */
+    font-family: 'Josefin Sans'; /* Aplica a fonte 'Josefin Sans' importada anteriormente */
+    font-weight: 350; /* Define o peso da fonte como 350, que é um estilo mais leve */
+    display: flex; /* Define que o <h1> também usa o layout flexbox */
 }
