@@ -23,15 +23,11 @@ Este projeto é uma aplicação simples que consome a FakeStore API para exibir 
    git clone https://github.com/SEU_USUARIO/FAKE_STORE.git
 
 **ESTRUTURA DO PROJETO**
-FAKE_STORE/
-│
-├── public/                # Arquivos públicos
-│   └── index.html         # HTML principal
-│
-├── src/                   # Arquivos de código fonte
-│   ├── components/        # Componentes reutilizáveis (Header, MainPage)
-│   ├── services/          # Arquivos de configuração da API (axios)
-│   ├── App.js             # Componente principal
-│   └── index.js           # Ponto de entrada do React
-│
-└── package.json           # Gerenciador de pacotes
+📦src
+ ┣ 📂components
+ ┃ ┣ 📂Header
+ ┃ ┣ 📂MainPage
+ ┣ 📂service
+ ┣ 📂assets
+ ┣ 📄 App.jsx
+ ┗ 📄 index.js
